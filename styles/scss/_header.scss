@@ -1,23 +1,19 @@
+@use 'global' as g;
+
 .header {
   background: url('../../assets/img/start-screen-gradient-background.png'),
     radial-gradient(237.5% 111.8% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   background-size: cover;
   background-repeat: no-repeat;
 
-  .section-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
-
   .header-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 40px;
 
     .header_logo_title {
-      color: var(--color-primary, #f1cdb3);
+      color: g.$color-primary;
 
       /* logo_title */
       font-family: Georgia;
@@ -29,7 +25,7 @@
     }
 
     .header_logo_subtitle {
-      color: var(--color-light-xl, #fff);
+      color: g.$color-light-xl;
 
       /* logo_subtitle */
       font-family: Arial;
@@ -46,13 +42,19 @@
       align-items: center;
       gap: 35px;
 
-      color: var(--color-dark-s, #cdcdcd);
+      color: g.$color-dark-s;
     }
   }
 }
 
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
 .menu__item a {
-  color: var(--color-dark-s, #cdcdcd);
+  color: g.$color-dark-s;
 
   /* paragraph-l */
   font-family: Arial;
@@ -63,6 +65,6 @@
 }
 
 .menu__item_active {
-  text-decoration: underline 3px #f1cdb3;
+  text-decoration: underline 3px g.$color-primary;
   text-underline-offset: 10px;
 }

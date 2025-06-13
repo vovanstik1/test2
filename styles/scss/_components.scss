@@ -1,0 +1,27 @@
+@use 'global' as g;
+/* btn */
+
+.btn {
+  padding: 15px 45px;
+  border-radius: 100px;
+  color: g.$color-dark-3xl;
+  font-family: Georgia;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; /* 22.1px */
+  letter-spacing: 1.02px;
+}
+
+.btn:hover {
+  background: g.$color-primary-light;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: g.$color-primary, #f1cdb3;
+}
+
+.btn-secondary {
+  border: 2px solid #f1cdb3;
+}
