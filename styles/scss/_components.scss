@@ -19,9 +19,11 @@
 }
 
 .btn-primary {
-  background: g.$color-primary, #f1cdb3;
+  background: g.$color-primary;
+  flex-shrink: 0;
 }
 
 .btn-secondary {
   border: 2px solid #f1cdb3;
+  background: none;
 }
